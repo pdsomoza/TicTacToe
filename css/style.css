@@ -138,15 +138,19 @@ h1 {
       margin-right: 0; }
     .boxes .box-filled-1 {
       background-color: #FFA000;
-      background-image: url(../img/o.svg); }
+      background-image: url(../img/o.svg);
+      pointer-events: none;
+      cursor: default; }
     .boxes .box-filled-2 {
       background-color: #3688C3;
-      background-image: url(../img/x.svg); }
+      background-image: url(../img/x.svg);
+      pointer-events: none;
+      cursor: default; }
 
-.boxes-hover-player1 .box:hover {
+.boxes-hover-player1 .box.empty:hover {
   background-image: url(../img/o.svg);
 }
 
-.boxes-hover-player2 .box:hover {
+.boxes-hover-player2 .box.empty:hover {
   background-image: url(../img/x.svg);
 }
